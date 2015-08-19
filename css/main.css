@@ -1,3 +1,24 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+header {
+  background-image: url("https://worksnug.s3.amazonaws.com/photos/2536/original.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+  width: 100%; }
+
+.workspace {
+  background-image: url("http://www.coworkinglondon.com/wp-content/uploads/2014/08/5210401_orig.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+  width: 100%; }
+
+nav {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
