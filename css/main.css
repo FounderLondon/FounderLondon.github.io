@@ -8,7 +8,8 @@ header {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  height: 600px;
+  box-sizing: border-box;
+  height: 100vh;
   padding: 400px 0 0 0;
   text-align: center;
   width: 100%; }
@@ -17,7 +18,6 @@ header {
     letter-spacing: 4px;
     margin: 0;
     padding: 0;
-    top: 400px;
     text-align: center;
     z-index: -100; }
 
@@ -25,21 +25,20 @@ h2 {
   font-size: 40px;
   letter-spacing: 4px; }
 
-.workspace {
-  background-image: url("http://www.coworkinglondon.com/wp-content/uploads/2014/08/5210401_orig.jpg");
+.network {
+  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f4bcc5bb1a413a&attid=0.1&disp=inline&realattid=f_idkdinea0&safe=1&attbid=ANGjdJ-7mBPzQkbA24tGW7fg_dNZps950-4u5uZ-FrMYvBvv1cxRu6zE97Sgz8Ye_AaqmxgmgxHvB0pyomRNPuKg_JDtUd9GTqGKb1m3JewQdEZg0wAvylL2sD9lAw0&ats=1440086572237&rm=14f4bcc5bb1a413a&zw&sz=w1411-h681");
   background-attachment: fixed;
+  background-repeat: repeat;
   background-position: center center;
-  background-size: cover;
-  height: 600px;
   padding: 400px 0 0 0;
   text-align: center;
   width: 100%; }
 
-.agency, .regeneration, .collaborate, footer {
+.network, .neighbourhoods, .collaborate, footer {
   padding: 100px;
   text-align: center; }
 
-.agency {
+.network {
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
@@ -50,7 +49,6 @@ h2 {
   margin: 50px;
   text-align: center; }
   .profile .feature-image {
-    background-color: #78d18b;
     padding: 0;
     height: 300px;
     overflow: hidden;
@@ -73,11 +71,22 @@ h2 {
   .profile h4 {
     padding: 20px 10px 5px 10px; }
 
+.neighbourhoods {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url("https://worksnug.s3.amazonaws.com/photos/2536/original.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  text-align: center;
+  width: 100%; }
+
 .collaborate {
   background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f4bcc5bb1a413a&attid=0.1&disp=inline&realattid=f_idkdinea0&safe=1&attbid=ANGjdJ-7mBPzQkbA24tGW7fg_dNZps950-4u5uZ-FrMYvBvv1cxRu6zE97Sgz8Ye_AaqmxgmgxHvB0pyomRNPuKg_JDtUd9GTqGKb1m3JewQdEZg0wAvylL2sD9lAw0&ats=1440086572237&rm=14f4bcc5bb1a413a&zw&sz=w1411-h681");
   background-attachment: fixed;
   background-position: center center;
-  background-size: cover; }
+  background-repeat: repeat; }
 
 nav {
   display: none; }
