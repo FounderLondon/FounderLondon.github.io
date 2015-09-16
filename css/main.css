@@ -10,7 +10,7 @@ h1 {
 
 header {
   background-color: rgba(0, 0, 0, 0.2);
-  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f88edb33db0077&attid=0.1&disp=inline&realattid=f_ie1cbd8c1&safe=1&attbid=ANGjdJ8bp7O87IMGl4eJy1ojqIGONAMmiCTi59DmdVQVT8gwjABr5nf7nSwHus5srCafSA3PpgjU2mhNewByU3YYPRflCLtG-nqzJtKzXgV5_ZRqHCMVA3VyOJIqdN8&ats=1442398649079&rm=14f88edb33db0077&zw&sz=w1416-h681");
+  background-image: url("../desk.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -34,13 +34,13 @@ h2 {
   letter-spacing: 4px; }
 
 .network {
-  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f88edb33db0077&attid=0.2&disp=inline&realattid=f_ie1cbd8m2&safe=1&attbid=ANGjdJ_aAVQZptZmxtlYMJR4QpF-XzoSHbBtpQCxMCsW4DHkjUdul8y21-o_C7fhzyCTpVMqu_Z6UUcvgfyiTQL78SDfWpGU1HhMaSxjlQ6gJkuTf4dSFlLb3FWtQUo&ats=1442398649079&rm=14f88edb33db0077&zw&sz=w1416-h681");
+  background-image: url("../marble.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   text-align: center; }
 
-.network, .neighbourhoods, .collaborate, footer {
+.network, .neighbourhoods, .collaborate {
   padding: 100px;
   text-align: center; }
 
@@ -56,9 +56,9 @@ h2 {
   text-align: center; }
   .profile .feature-image {
     padding: 0;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
-    width: 400px; }
+    width: 300px; }
   .profile .feature-image > img {
     height: 300px;
     object-fit: cover;
@@ -79,7 +79,7 @@ h2 {
 
 .neighbourhoods {
   background-color: rgba(0, 0, 0, 0.2);
-  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f88edb33db0077&attid=0.3&disp=inline&realattid=f_ie1cbd8q3&safe=1&attbid=ANGjdJ_jhJNY-CHg88rt9PIJqdrP48H9NsQGwKxwVxEAm6OXt-xN1de-mXSJWFu9UZZO5kBwEYlmi6dR5GWnFhUKHjLNzpVJ-V0JiVoYqmtWt78L0yccAYnqZceGLAU&ats=1442398649079&rm=14f88edb33db0077&zw&sz=w1416-h681");
+  background-image: url("../dancing.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -89,7 +89,7 @@ h2 {
   text-align: center; }
 
 .collaborate {
-  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f88edb33db0077&attid=0.2&disp=inline&realattid=f_ie1cbd8m2&safe=1&attbid=ANGjdJ_aAVQZptZmxtlYMJR4QpF-XzoSHbBtpQCxMCsW4DHkjUdul8y21-o_C7fhzyCTpVMqu_Z6UUcvgfyiTQL78SDfWpGU1HhMaSxjlQ6gJkuTf4dSFlLb3FWtQUo&ats=1442398649079&rm=14f88edb33db0077&zw&sz=w1416-h681");
+  background-image: url("../marble.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: repeat;
