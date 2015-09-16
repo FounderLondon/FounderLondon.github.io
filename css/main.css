@@ -1,19 +1,22 @@
 html, body, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0; }
 
 header {
   background-color: rgba(0, 0, 0, 0.2);
-  background-image: url("https://worksnug.s3.amazonaws.com/photos/2536/original.jpg");
+  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f88edb33db0077&attid=0.1&disp=inline&realattid=f_ie1cbd8c1&safe=1&attbid=ANGjdJ8bp7O87IMGl4eJy1ojqIGONAMmiCTi59DmdVQVT8gwjABr5nf7nSwHus5srCafSA3PpgjU2mhNewByU3YYPRflCLtG-nqzJtKzXgV5_ZRqHCMVA3VyOJIqdN8&ats=1442398649079&rm=14f88edb33db0077&zw&sz=w1416-h681");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   box-sizing: border-box;
+  color: white;
   height: 100vh;
   padding: 400px 0 0 0;
   text-align: center;
   width: 100%; }
   header h1 {
+    font-weight: bold;
     font-size: 60px;
     letter-spacing: 4px;
     margin: 0;
@@ -26,13 +29,11 @@ h2 {
   letter-spacing: 4px; }
 
 .network {
-  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f4bcc5bb1a413a&attid=0.1&disp=inline&realattid=f_idkdinea0&safe=1&attbid=ANGjdJ-7mBPzQkbA24tGW7fg_dNZps950-4u5uZ-FrMYvBvv1cxRu6zE97Sgz8Ye_AaqmxgmgxHvB0pyomRNPuKg_JDtUd9GTqGKb1m3JewQdEZg0wAvylL2sD9lAw0&ats=1440086572237&rm=14f4bcc5bb1a413a&zw&sz=w1411-h681");
+  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f88edb33db0077&attid=0.2&disp=inline&realattid=f_ie1cbd8m2&safe=1&attbid=ANGjdJ_aAVQZptZmxtlYMJR4QpF-XzoSHbBtpQCxMCsW4DHkjUdul8y21-o_C7fhzyCTpVMqu_Z6UUcvgfyiTQL78SDfWpGU1HhMaSxjlQ6gJkuTf4dSFlLb3FWtQUo&ats=1442398649079&rm=14f88edb33db0077&zw&sz=w1416-h681");
   background-attachment: fixed;
-  background-repeat: repeat;
+  background-size: cover;
   background-position: center center;
-  padding: 400px 0 0 0;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
 
 .network, .neighbourhoods, .collaborate, footer {
   padding: 100px;
@@ -73,20 +74,22 @@ h2 {
 
 .neighbourhoods {
   background-color: rgba(0, 0, 0, 0.2);
-  background-image: url("https://worksnug.s3.amazonaws.com/photos/2536/original.jpg");
+  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f88edb33db0077&attid=0.3&disp=inline&realattid=f_ie1cbd8q3&safe=1&attbid=ANGjdJ_jhJNY-CHg88rt9PIJqdrP48H9NsQGwKxwVxEAm6OXt-xN1de-mXSJWFu9UZZO5kBwEYlmi6dR5GWnFhUKHjLNzpVJ-V0JiVoYqmtWt78L0yccAYnqZceGLAU&ats=1442398649079&rm=14f88edb33db0077&zw&sz=w1416-h681");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   box-sizing: border-box;
+  color: white;
   height: 100vh;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
 
 .collaborate {
-  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f4bcc5bb1a413a&attid=0.1&disp=inline&realattid=f_idkdinea0&safe=1&attbid=ANGjdJ-7mBPzQkbA24tGW7fg_dNZps950-4u5uZ-FrMYvBvv1cxRu6zE97Sgz8Ye_AaqmxgmgxHvB0pyomRNPuKg_JDtUd9GTqGKb1m3JewQdEZg0wAvylL2sD9lAw0&ats=1440086572237&rm=14f4bcc5bb1a413a&zw&sz=w1411-h681");
+  background-image: url("https://mail.google.com/mail/u/0/?ui=2&ik=cdf7762786&view=fimg&th=14f88edb33db0077&attid=0.2&disp=inline&realattid=f_ie1cbd8m2&safe=1&attbid=ANGjdJ_aAVQZptZmxtlYMJR4QpF-XzoSHbBtpQCxMCsW4DHkjUdul8y21-o_C7fhzyCTpVMqu_Z6UUcvgfyiTQL78SDfWpGU1HhMaSxjlQ6gJkuTf4dSFlLb3FWtQUo&ats=1442398649079&rm=14f88edb33db0077&zw&sz=w1416-h681");
   background-attachment: fixed;
   background-position: center center;
-  background-repeat: repeat; }
+  background-repeat: repeat;
+  background-size: cover;
+  height: 50vh; }
 
 nav {
   display: none; }
