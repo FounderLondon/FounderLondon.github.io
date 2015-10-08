@@ -1,21 +1,18 @@
 html, body, h1, h2, h3, h4, h5, h6, p {
-    // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 80px;
-    letter-spacing: 21px;
-    margin: 0;
-    text-align: center;
+    font-size: 60px;
+    letter-spacing: 4px;
 }
 
 p {
     font-size: 30px;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 header {
@@ -25,45 +22,24 @@ header {
     background-position: center center;
     background-size: cover;
     box-sizing: border-box;
-    @include box-shadow(0 4px 0 rgba(0,0,0,.05));
     color: white;
-    height: 150vh;
+    height: 100vh;
     padding: 0;
     text-align: center;
     width: 100%;
 
+    img {
+        height: 100px;
+    }
+
     h1 {
         font-weight: bold;
-        font-size: 80px;
-        // letter-spacing: 10px;
-        margin: 0;
-        padding-top: 200px;
-        padding-bottom: 60px;
-        text-align: center;
-    }
-
-    span {
         font-size: 60px;
-        padding-bottom: 50px;
-    }
-
-    p {
-        font-size: 35px;
-        letter-spacing: 5px;
-        line-height: 1.25;
-        padding: 20px 100px;
-        text-transform: uppercase;
-    }
-
-    h3 {
-        font-weight: bold;
-        font-size: 60px;
-        letter-spacing: 10px;
+        letter-spacing: 4px;
         margin: 0;
-        padding-top: 50px;
-        // padding-bottom: 60px;
+        padding-top: 275px;
         text-align: center;
-        text-transform:uppercase;
+        z-index: -100;
     }
 
 }
@@ -83,21 +59,12 @@ h2 {
 }
 
 .network, .neighbourhoods, .collaborate {
+    padding: 100px;
     text-align: center;
 }
 
 .network {
     @include box-shadow(0 4px 0 rgba(0,0,0,.05));
-    // color: #FAFAFA;
-    padding: 100px 50px;
-
-    h3 {
-        font-size: 35px;
-        letter-spacing: 5px;
-        line-height: 1.25;
-        padding: 20px 50px;
-    }
-
 }
 
 .profile {
@@ -106,18 +73,19 @@ h2 {
     text-align: center;
 
     .feature-image {
+        @include box-shadow(0 4px 0 rgba(0,0,0,.05));
         padding: 0;
-        height: 400px;
+        height: 250px;
         overflow: hidden;
         width: 300px;
     }
 
     .feature-image > img {
-        height: 500px;
+        height: 300px;
         object-fit: cover;
         object-position: cover;
         transition: all .4s ease-in-out;
-        width: 300px;
+        width: 400px;
     }
 
     .feature-image > img:hover {
@@ -133,46 +101,22 @@ h2 {
 }
 
 .neighbourhoods {
+    background-color: rgba(0,0,0,0.2);
+    // background-image: url("../dancing.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     box-sizing: border-box;
-    @include box-shadow(0 4px 0 rgba(0,0,0,.05));
     color: white;
-    height: 140vh;
+    height: 100vh;
     text-align: center;
-
-    h1 {
-        font-weight: bold;
-        font-size: 80px;
-        letter-spacing: 10px;
-        margin: 0;
-        padding-top: 210px;
-        padding-bottom: 40px;
-        text-align: center;
-    }
-
-    p {
-        font-size: 35px;
-        letter-spacing: 5px;
-        line-height: 1.25;
-        padding: 20px 100px;
-        text-transform: uppercase;
-    }
-
-    h3 {
-        font-weight: bold;
-        font-size: 60px;
-        letter-spacing: 10px;
-        margin: 0;
-        padding: 50px 100px;
-        text-align: center;
-        text-transform:uppercase;
-    }
 }
 
 .collaborate {
-    height: 70vh;
-    @include box-shadow(0 4px 0 rgba(0,0,0,.05));
-
-    h1 {
-        padding-top: 150px;
-    }
+    // background-image: url("../marble.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 50vh;
 }
