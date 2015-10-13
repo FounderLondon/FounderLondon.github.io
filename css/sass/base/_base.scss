@@ -31,8 +31,8 @@ header {
   box-sizing: border-box;
   @include box-shadow(0 4px 0 rgba(0,0,0,.05));
   color: white;
-  height: 150vh;
-  padding: 0;
+  // height: 150vh;
+  padding-bottom: 130px;
   text-align: center;
   width: 100%;
 }
@@ -50,6 +50,7 @@ header {
   header span {
     font-size: 60px;
     padding-bottom: 50px;
+    vertical-align: text-top;
   }
 
   header p {
