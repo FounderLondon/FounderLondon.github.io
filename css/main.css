@@ -95,6 +95,9 @@ header a {
   line-height: 1.25;
   padding: 20px 50px; }
 
+a {
+  color: #222222; }
+
 .profile {
   display: inline-block;
   margin: 50px;
@@ -102,10 +105,15 @@ header a {
 
 .profile-text {
   display: none;
-  font-weight: 300;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  padding: 100px 10px 0 10px;
   position: absolute;
   text-align: center;
-  width: 300px; }
+  width: 280px;
+  z-index: 1000; }
 
 .profile .feature-image {
   padding: 0;
@@ -120,8 +128,7 @@ header a {
   width: 300px; }
 
 .profile .feature-image > img:hover {
-  cursor: pointer;
-  opacity: 0.4; }
+  cursor: pointer; }
 
 .profile h4 {
   padding: 20px 10px 5px 10px; }
