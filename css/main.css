@@ -218,29 +218,30 @@ header a {
 
 .full-profile {
   text-align: center;
-  padding: 40px 100px; }
+  padding: 40px 100px 30px 100px; }
   .full-profile h1 {
-    left: 16%;
-    padding-bottom: 30px;
-    position: absolute;
-    top: 35%; }
+    font-size: 60px;
+    padding-bottom: 40px; }
   .full-profile img {
     -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
     -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
     box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px; }
+    height: 445px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    width: 670px; }
   .full-profile p {
     letter-spacing: 2px;
-    padding-top: 40px;
+    padding-top: 30px;
     text-transform: uppercase; }
 
 .related-profiles {
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center; }
 
 hr {
-  margin: 0 auto 60px auto;
+  margin: 0 auto 50px auto;
   width: 60%; }
 
 nav .logo {

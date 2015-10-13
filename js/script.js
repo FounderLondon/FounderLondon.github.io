@@ -17,3 +17,17 @@ $(".close").click(function() {
 $(".profile").hover(function() {
     $(".profile-text").fadeIn("slow");
 })
+
+// $(window).scroll(function() {
+//     if ($(window).scrollTop() >= (85)) {
+//         $("nav").css({
+//             background-color: "white"
+//         });
+//         $(".hamburger").css({
+//             position: "fixed"
+//         });
+//         $(".logo").css({
+//             position: "fixed"
+//         });
+//     }
+// })

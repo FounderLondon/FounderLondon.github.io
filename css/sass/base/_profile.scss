@@ -4,33 +4,37 @@
 
 .full-profile {
   text-align: center;
-  padding: 40px 100px;
+  padding: 40px 100px 30px 100px;
 
     h1 {
-        left: 16%;
-        padding-bottom: 30px;
-        position: absolute;
-        top: 35%;
+        font-size: 60px;
+        // left: 16%;
+        padding-bottom: 40px;
+        // position: absolute;
+        // top: 35%;
     }
 
     img {
         @include box-shadow(0 4px 0 rgba(0,0,0,.05));
-        margin-bottom: 30px;
+        height: 445px;
+        margin-bottom: 20px;
+        object-fit: cover;
+        width: 670px;
     }
 
   p {
     letter-spacing: 2px;
-    padding-top: 40px;
+    padding-top: 30px;
     text-transform: uppercase;
   }
 }
 
 .related-profiles {
-    margin-top: 60px;
+    margin-top: 40px;
     text-align: center;
 }
 
 hr {
-    margin: 0 auto 60px auto;
+    margin: 0 auto 50px auto;
     width: 60%;
 }
