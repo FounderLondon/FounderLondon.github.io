@@ -17,8 +17,3 @@ $(".close").click(function() {
 $(".profile").hover(function() {
     $(".profile-text").fadeIn("slow");
 })
-
-$(function() {
-    $("img.lazy").lazyload({
-    });
-});

@@ -69,6 +69,9 @@ header h3:hover {
   color: #222222;
   cursor: pointer; }
 
+header a {
+  text-decoration: none !important; }
+
 .network {
   color: #222222;
   background-attachment: fixed;
@@ -163,6 +166,9 @@ header h3:hover {
   color: #222222;
   cursor: pointer; }
 
+.neighbourhoods a {
+  text-decoration: none !important; }
+
 .collaborate {
   color: #222222;
   height: 80vh;
@@ -204,7 +210,8 @@ header h3:hover {
   .collaborate .social-icon {
     cursor: pointer;
     display: inline-block;
-    width: 50px; }
+    padding: 0 3px;
+    width: 30px; }
 
 .top {
   height: 10vh; }
@@ -262,5 +269,7 @@ nav .menu {
   nav .menu a {
     color: white;
     text-decoration: none; }
+  nav .menu a:hover {
+    color: #222222; }
 
 /*# sourceMappingURL=main.css.map */

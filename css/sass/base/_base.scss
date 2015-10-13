@@ -78,6 +78,10 @@ header {
     // text-decoration: underline;
   }
 
+  header a {
+      text-decoration: none !important;
+  }
+
 .network {
   color: #222222;
   background-attachment: fixed;
@@ -187,6 +191,10 @@ header {
     cursor: pointer;
   }
 
+  .neighbourhoods a {
+      text-decoration: none !important;
+  }
+
 .collaborate {
   color: #222222;
   height: 80vh;
@@ -240,7 +248,8 @@ header {
   .social-icon {
     cursor: pointer;
     display: inline-block;
-    width: 50px;
+    padding: 0 3px;
+    width: 30px;
   }
 
 }
