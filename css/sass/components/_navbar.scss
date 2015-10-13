@@ -21,6 +21,14 @@ nav {
         height: 80px;
     }
 
+    .black {
+        color: #222222;
+    }
+
+    .white {
+        color: white;
+    }
+
     .menu {
         left: 30%;
         position: absolute;
@@ -40,7 +48,6 @@ nav {
         }
 
         a {
-            color: white;
             text-decoration: none;
         }
 

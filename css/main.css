@@ -255,6 +255,10 @@ nav .close {
   display: none; }
 nav .menu-wrapper {
   height: 80px; }
+nav .black {
+  color: #222222; }
+nav .white {
+  color: white; }
 nav .menu {
   left: 30%;
   position: absolute;
@@ -269,7 +273,6 @@ nav .menu {
     padding: 25px 20px 0 20px;
     text-transform: uppercase; }
   nav .menu a {
-    color: white;
     text-decoration: none; }
   nav .menu a:hover {
     color: #222222; }
