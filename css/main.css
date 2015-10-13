@@ -87,7 +87,7 @@ header a {
   -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  padding: 80px 50px; }
+  padding: 80px 40px; }
 
 .network h3 {
   font-size: 35px;
@@ -100,7 +100,7 @@ a {
 
 .profile {
   display: inline-block;
-  margin: 50px;
+  margin: 40px;
   text-align: center; }
 
 .profile-text {
