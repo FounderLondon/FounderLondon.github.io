@@ -30,9 +30,9 @@ nav {
     }
 
     .menu {
-        left: 30%;
+        left: 25%;
         position: absolute;
-        top: -50px;
+        top: -200px;
 
         ul {
             margin: 0;
@@ -56,4 +56,21 @@ nav {
         }
     }
 
+}
+
+@media (max-width: 1150px) {
+
+    nav .menu {
+        font-size: 16px;
+        left: 15%;
+        letter-spacing: 2px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .menu {
+        display: none;
+    }
 }

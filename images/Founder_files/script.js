@@ -3,27 +3,16 @@ console.log("yo")
 $(".hamburger").click(function() {
     $(".hamburger").css("display", "none");
     $(".close").css("display", "block");
-    if ($(window).width() > 950) {
-        $(".menu").animate({
-            top: "0px"
-        }, 200);
-    }
-    if ($(window).width() < 950) {
-        $(".menu").css({
-            left: "10%"
-        });
-        $(".menu").animate({
-            top: "70px"
-        }, 200);
-    }
-
+    $(".menu").animate({
+        top: "0px"
+    }, 200);
 });
 
 $(".close").click(function() {
     $(".close").css("display", "none");
     $(".hamburger").css("display", "block");
     $(".menu").animate({
-        top: "-200px"
+        top: "-50px"
     }, 600);
 });
 
