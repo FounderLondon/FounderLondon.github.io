@@ -156,7 +156,7 @@ header {
   box-sizing: border-box;
   @include box-shadow(0 4px 0 rgba(0,0,0,.05));
   color: white;
-  height: 140vh;
+  padding-bottom: 50px;
   text-align: center;
 }
 
