@@ -82,10 +82,10 @@ header {
   }
 
 .network {
-  color: #222222;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+  color: #222222;
   text-align: center;
 }
 
@@ -95,7 +95,7 @@ header {
 
 .network {
   @include box-shadow(0 4px 0 rgba(0,0,0,.05));
-  padding: 100px 50px;
+  padding: 80px 50px;
 }
 
   .network h3 {
@@ -118,7 +118,7 @@ header {
   .profile-text {
     display: none;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 2px;
     line-height: 1.5;
     padding: 100px 10px 0 10px;
