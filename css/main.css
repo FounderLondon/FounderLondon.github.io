@@ -1,14 +1,19 @@
 html, body, h1, h2, h3, h4, h5, h6, p {
   font-family: 'Raleway', sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-transform: uppercase; }
 
 h1 {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 80px;
   letter-spacing: 21px;
   margin: 0;
   text-align: center; }
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 4px; }
 
 p {
   font-size: 30px;
@@ -29,36 +34,43 @@ header {
   padding: 0;
   text-align: center;
   width: 100%; }
-  header h1 {
-    font-weight: bold;
-    font-size: 80px;
-    margin: 0;
-    padding-top: 200px;
-    padding-bottom: 60px;
-    text-align: center; }
-  header span {
-    font-size: 60px;
-    padding-bottom: 50px; }
-  header p {
-    font-size: 35px;
-    letter-spacing: 5px;
-    line-height: 1.25;
-    padding: 20px 100px;
-    text-transform: uppercase; }
-  header h3 {
-    font-weight: bold;
-    font-size: 60px;
-    letter-spacing: 10px;
-    margin: 0;
-    padding-top: 50px;
-    text-align: center;
-    text-transform: uppercase; }
 
-h2 {
-  font-size: 40px;
-  letter-spacing: 4px; }
+header h1 {
+  font-size: 80px;
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 160px;
+  padding-bottom: 60px;
+  text-align: center; }
+
+header span {
+  font-size: 60px;
+  padding-bottom: 50px; }
+
+header p {
+  font-size: 35px;
+  letter-spacing: 5px;
+  line-height: 1.25;
+  padding: 0px 100px 35px 100px;
+  text-transform: uppercase; }
+
+header h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+header h3:hover {
+  color: #222222;
+  cursor: pointer; }
 
 .network {
+  color: #222222;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
@@ -73,38 +85,43 @@ h2 {
   -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   padding: 100px 50px; }
-  .network h3 {
-    font-size: 35px;
-    letter-spacing: 5px;
-    line-height: 1.25;
-    padding: 20px 50px; }
+
+.network h3 {
+  font-size: 35px;
+  letter-spacing: 5px;
+  line-height: 1.25;
+  padding: 20px 50px; }
 
 .profile {
   display: inline-block;
   margin: 50px;
   text-align: center; }
-  .profile .feature-image {
-    padding: 0;
-    height: 400px;
-    overflow: hidden;
-    width: 300px; }
-  .profile .feature-image > img {
-    height: 500px;
-    object-fit: cover;
-    object-position: cover;
-    transition: all .4s ease-in-out;
-    width: 300px; }
-  .profile .feature-image > img:hover {
-    cursor: pointer;
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-    transition: all .4s ease-in-out;
-    opacity: 0.6; }
-  .profile h4 {
-    padding: 20px 10px 5px 10px; }
+
+.profile-text {
+  display: none;
+  font-weight: 300;
+  position: absolute;
+  text-align: center;
+  width: 300px; }
+
+.profile .feature-image {
+  padding: 0;
+  height: 400px;
+  overflow: hidden;
+  width: 300px; }
+
+.profile .feature-image > img {
+  height: 500px;
+  object-fit: cover;
+  object-position: cover;
+  width: 300px; }
+
+.profile .feature-image > img:hover {
+  cursor: pointer;
+  opacity: 0.4; }
+
+.profile h4 {
+  padding: 20px 10px 5px 10px; }
 
 .neighbourhoods {
   box-sizing: border-box;
@@ -115,47 +132,122 @@ h2 {
   color: white;
   height: 140vh;
   text-align: center; }
-  .neighbourhoods h1 {
-    font-weight: bold;
-    font-size: 80px;
-    letter-spacing: 10px;
-    margin: 0;
-    padding-top: 210px;
-    padding-bottom: 40px;
-    text-align: center; }
-  .neighbourhoods p {
-    font-size: 35px;
-    letter-spacing: 5px;
-    line-height: 1.25;
-    padding: 20px 100px;
-    text-transform: uppercase; }
-  .neighbourhoods h3 {
-    font-weight: bold;
-    font-size: 60px;
-    letter-spacing: 10px;
-    margin: 0;
-    padding: 50px 100px;
-    text-align: center;
-    text-transform: uppercase; }
+
+.neighbourhoods h1 {
+  font-size: 80px;
+  letter-spacing: 10px;
+  margin: 0;
+  padding-top: 210px;
+  padding-bottom: 40px;
+  text-align: center; }
+
+.neighbourhoods p {
+  font-size: 35px;
+  letter-spacing: 5px;
+  line-height: 1.25;
+  padding: 20px 100px;
+  text-transform: uppercase; }
+
+.neighbourhoods h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 10px;
+  margin: 0;
+  padding: 50px 100px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.neighbourhoods h3:hover {
+  color: #222222;
+  cursor: pointer; }
 
 .collaborate {
-  height: 70vh;
+  color: #222222;
+  height: 80vh;
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05); }
   .collaborate h1 {
     padding-top: 150px; }
+  .collaborate p {
+    font-weight: 500;
+    padding-top: 30px; }
+  .collaborate input {
+    margin-top: 30px; }
+  .collaborate input[type="text"] {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+    width: 300px; }
+  .collaborate input[type="submit"] {
+    background-color: #222222;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    height: 45px;
+    letter-spacing: 3px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 120px; }
+  .collaborate input[type="submit"]:hover {
+    background-color: white;
+    border: 1px solid #222222;
+    color: #222222; }
+  .collaborate .social-icons {
+    padding-top: 30px; }
+  .collaborate .social-icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px; }
 
-nav img {
+.top {
+  height: 10vh; }
+
+.full-profile {
+  text-align: center;
+  padding: 20px 100px; }
+  .full-profile h1 {
+    left: 16%;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 35%; }
+  .full-profile .active {
+    background-image: url("marble.jpg"); }
+    .full-profile .active img {
+      opacity: 0.6; }
+  .full-profile img {
+    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05); }
+  .full-profile p {
+    letter-spacing: 2px;
+    padding-top: 40px;
+    text-transform: uppercase; }
+
+.related-profiles {
+  text-align: center; }
+
+nav .logo {
+  float: left;
+  padding: 22px 30px; }
+nav .close, nav .hamburger {
+  width: 40px;
   cursor: pointer;
   float: right;
-  padding: 10px 30px; }
+  padding: 17px 30px; }
 nav .close {
   display: none; }
 nav .menu {
   display: none;
-  height: 80px; }
+  height: 80px;
+  z-index: -1; }
   nav .menu ul {
     margin: 0; }
   nav .menu li {
@@ -163,6 +255,7 @@ nav .menu {
     display: inline-block;
     font-size: 18px;
     letter-spacing: 3px;
-    padding: 25px 20px 0 20px; }
+    padding: 25px 20px 0 20px;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

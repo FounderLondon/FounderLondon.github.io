@@ -1,122 +1,249 @@
 html, body, h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 60px;
-    letter-spacing: 4px;
-}
-
-p {
-    font-size: 30px;
-    font-weight: normal;
-}
-
-header {
-    background-color: rgba(0,0,0,0.2);
-    // background-image: url("../desk.jpg");
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    box-sizing: border-box;
-    color: white;
-    height: 100vh;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-
-    img {
-        height: 100px;
-    }
-
-    h1 {
-        font-weight: bold;
-        font-size: 60px;
-        letter-spacing: 4px;
-        margin: 0;
-        padding-top: 275px;
-        text-align: center;
-        z-index: -100;
-    }
-
+  font-weight: 500;
+  font-size: 80px;
+  letter-spacing: 21px;
+  margin: 0;
+  text-align: center;
 }
 
 h2 {
-    font-size: 40px;
-    letter-spacing: 4px;
+  font-size: 40px;
+  letter-spacing: 4px;
 }
 
-.network {
-    // background-image: url("../marble.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    // padding: 400px 0 0 0;
+p {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  @include box-shadow(0 4px 0 rgba(0,0,0,.05));
+  color: white;
+  height: 150vh;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+  header h1 {
+    // font-weight: bold;
+    font-size: 80px;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 160px;
+    padding-bottom: 60px;
     text-align: center;
+  }
+
+  header span {
+    font-size: 60px;
+    padding-bottom: 50px;
+  }
+
+  .intro-text {
+  }
+
+  header p {
+    font-size: 35px;
+    letter-spacing: 5px;
+    line-height: 1.25;
+    padding: 0px 100px 35px 100px;
+    text-transform: uppercase;
+  }
+
+  header h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  header h3:hover {
+    color: #222222;
+    cursor: pointer;
+    // text-decoration: underline;
+  }
+
+.network {
+  color: #222222;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
 }
 
 .network, .neighbourhoods, .collaborate {
-    padding: 100px;
-    text-align: center;
+  text-align: center;
 }
 
 .network {
-    @include box-shadow(0 4px 0 rgba(0,0,0,.05));
+  @include box-shadow(0 4px 0 rgba(0,0,0,.05));
+  padding: 100px 50px;
 }
+
+  .network h3 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    line-height: 1.25;
+    padding: 20px 50px;
+  }
 
 .profile {
-    display: inline-block;
-    margin: 50px;
-    text-align: center;
-
-    .feature-image {
-        @include box-shadow(0 4px 0 rgba(0,0,0,.05));
-        padding: 0;
-        height: 250px;
-        overflow: hidden;
-        width: 300px;
-    }
-
-    .feature-image > img {
-        height: 300px;
-        object-fit: cover;
-        object-position: cover;
-        transition: all .4s ease-in-out;
-        width: 400px;
-    }
-
-    .feature-image > img:hover {
-        cursor: pointer;
-        @include transform(scale(1.05));
-        transition: all .4s ease-in-out;
-        opacity: 0.6;
-    }
-
-    h4 {
-        padding: 20px 10px 5px 10px;
-    }
+  display: inline-block;
+  margin: 50px;
+  text-align: center;
 }
+
+  .profile-text {
+    display: none;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+    // top: 20%;
+    width: 300px;
+    // z-index: -1000;
+  }
+
+  .profile .feature-image {
+    padding: 0;
+    height: 400px;
+    overflow: hidden;
+    width: 300px;
+  }
+
+  .profile .feature-image > img {
+    height: 500px;
+    object-fit: cover;
+    object-position: cover;
+    // transition: all .4s ease-in-out;
+    width: 300px;
+  }
+
+  .profile .feature-image > img:hover {
+    cursor: pointer;
+    // @include transform(scale(1.05));
+    // transform: scale(1.05);
+    // transition: all .4s ease-in-out;
+    opacity: 0.4;
+  }
+
+  .profile h4 {
+    padding: 20px 10px 5px 10px;
+  }
 
 .neighbourhoods {
-    background-color: rgba(0,0,0,0.2);
-    // background-image: url("../dancing.jpg");
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    box-sizing: border-box;
-    color: white;
-    height: 100vh;
-    text-align: center;
+  box-sizing: border-box;
+  @include box-shadow(0 4px 0 rgba(0,0,0,.05));
+  color: white;
+  height: 140vh;
+  text-align: center;
 }
 
+  .neighbourhoods h1 {
+    font-size: 80px;
+    letter-spacing: 10px;
+    margin: 0;
+    padding-top: 210px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .neighbourhoods p {
+    font-size: 35px;
+    letter-spacing: 5px;
+    line-height: 1.25;
+    padding: 20px 100px;
+    text-transform: uppercase;
+  }
+
+  .neighbourhoods h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 50px 100px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .neighbourhoods h3:hover {
+    color: #222222;
+    cursor: pointer;
+  }
+
 .collaborate {
-    // background-image: url("../marble.jpg");
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: repeat;
-    background-size: cover;
-    height: 50vh;
+  color: #222222;
+  height: 80vh;
+  @include box-shadow(0 4px 0 rgba(0,0,0,.05));
+
+  h1 {
+    padding-top: 150px;
+  }
+
+  p {
+    font-weight: 500;
+    padding-top: 30px;
+  }
+
+  input {
+    margin-top: 30px;
+  }
+
+  input[type="text"] {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px;
+    width: 300px;
+  }
+
+  input[type="submit"] {
+    background-color: #222222;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    height: 45px;
+    letter-spacing: 3px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 120px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: white;
+    border: 1px solid #222222;
+    color: #222222;
+  }
+
+  .social-icons {
+    padding-top: 30px;
+  }
+
+  .social-icon {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+  }
+
 }

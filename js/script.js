@@ -9,3 +9,7 @@ $(".close").click(function() {
     $(".hamburger").css("display", "block");
     $(".menu").slideUp();
 });
+
+$(".profile").hover(function() {
+    $(".profile-text").fadeIn("slow");
+})

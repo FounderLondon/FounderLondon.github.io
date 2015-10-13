@@ -1,9 +1,16 @@
 nav {
 
-    img {
+    .logo {
+      float: left;
+      // width: 90%;
+      padding: 22px 30px;
+    }
+
+    .close, .hamburger {
+        width: 40px;
         cursor: pointer;
         float: right;
-        padding: 10px 30px;
+        padding: 17px 30px;
     }
 
     .close {
@@ -14,6 +21,7 @@ nav {
         display: none;
         // background-color: black;
         height: 80px;
+        z-index: -1;
 
         ul {
             margin: 0;
@@ -25,6 +33,7 @@ nav {
             font-size: 18px;
             letter-spacing: 3px;
             padding: 25px 20px 0 20px;
+            text-transform: uppercase;
         }
     }
 
