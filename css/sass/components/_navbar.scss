@@ -17,11 +17,14 @@ nav {
         display: none;
     }
 
-    .menu {
-        display: none;
-        // background-color: black;
+    .menu-wrapper {
         height: 80px;
-        z-index: -1;
+    }
+
+    .menu {
+        left: 30%;
+        position: absolute;
+        top: -50px;
 
         ul {
             margin: 0;
@@ -34,6 +37,11 @@ nav {
             letter-spacing: 3px;
             padding: 25px 20px 0 20px;
             text-transform: uppercase;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
         }
     }
 

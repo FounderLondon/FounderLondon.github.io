@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, h6, p {
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
@@ -50,9 +50,6 @@ header {
   header span {
     font-size: 60px;
     padding-bottom: 50px;
-  }
-
-  .intro-text {
   }
 
   header p {

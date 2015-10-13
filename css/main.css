@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, h6, p {
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
@@ -244,10 +244,12 @@ nav .close, nav .hamburger {
   padding: 17px 30px; }
 nav .close {
   display: none; }
+nav .menu-wrapper {
+  height: 80px; }
 nav .menu {
-  display: none;
-  height: 80px;
-  z-index: -1; }
+  left: 30%;
+  position: absolute;
+  top: -50px; }
   nav .menu ul {
     margin: 0; }
   nav .menu li {
@@ -257,5 +259,8 @@ nav .menu {
     letter-spacing: 3px;
     padding: 25px 20px 0 20px;
     text-transform: uppercase; }
+  nav .menu a {
+    color: white;
+    text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
