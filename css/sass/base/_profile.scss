@@ -4,26 +4,19 @@
 
 .full-profile {
   text-align: center;
-  padding: 20px 100px;
+  padding: 40px 100px;
 
-  h1 {
-    left: 16%;
-    padding-bottom: 30px;
-    position: absolute;
-    top: 35%;
-  }
-
-  .active {
-    background-image: url("marble.jpg");
+    h1 {
+        left: 16%;
+        padding-bottom: 30px;
+        position: absolute;
+        top: 35%;
+    }
 
     img {
-      opacity: 0.6;
+        @include box-shadow(0 4px 0 rgba(0,0,0,.05));
+        margin-bottom: 30px;
     }
-  }
-
-  img {
-    @include box-shadow(0 4px 0 rgba(0,0,0,.05));
-  }
 
   p {
     letter-spacing: 2px;
@@ -33,5 +26,11 @@
 }
 
 .related-profiles {
-  text-align: center;
+    margin-top: 60px;
+    text-align: center;
+}
+
+hr {
+    margin: 0 auto 60px auto;
+    width: 60%;
 }

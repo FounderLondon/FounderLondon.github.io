@@ -218,28 +218,30 @@ header a {
 
 .full-profile {
   text-align: center;
-  padding: 20px 100px; }
+  padding: 40px 100px; }
   .full-profile h1 {
     left: 16%;
     padding-bottom: 30px;
     position: absolute;
     top: 35%; }
-  .full-profile .active {
-    background-image: url("marble.jpg"); }
-    .full-profile .active img {
-      opacity: 0.6; }
   .full-profile img {
     -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
     -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05); }
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px; }
   .full-profile p {
     letter-spacing: 2px;
     padding-top: 40px;
     text-transform: uppercase; }
 
 .related-profiles {
+  margin-top: 60px;
   text-align: center; }
+
+hr {
+  margin: 0 auto 60px auto;
+  width: 60%; }
 
 nav .logo {
   float: left;
