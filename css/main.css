@@ -208,7 +208,7 @@ a {
     letter-spacing: 3px;
     padding: 10px;
     text-transform: uppercase;
-    width: 120px; }
+    width: 170px; }
   .collaborate input[type="submit"]:hover {
     background-color: white;
     border: 1px solid #222222;
@@ -249,6 +249,9 @@ a {
   header p, .network p, .neighbourhoods p {
     font-size: 24px;
     padding: 0px 20px 20px 20px; }
+
+  .collaborate p {
+    font-size: 20px; }
 
   header h3, .network h3, .neighbourhoods h3, .collaborate h3 {
     font-size: 26px;
