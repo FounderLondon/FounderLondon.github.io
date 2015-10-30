@@ -2,7 +2,6 @@ nav {
 
     .logo {
       float: left;
-      // width: 90%;
       padding: 22px 30px;
     }
 
@@ -70,13 +69,9 @@ nav {
 
 @media (max-width: 850px) {
 
-    // nav .logo {
-    //     float: inherit;
-    // }
-
-    // .hamburger, .menu-wrapper {
-    //     display: none;
-    // }
+    nav .logo {
+        width: 120px;
+    }
 
     .menu {
         position: relative;
