@@ -23,7 +23,7 @@ header {
   background-color: rgba(0, 0, 0, 0.2);
   background-attachment: fixed;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   box-sizing: border-box;
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
@@ -31,17 +31,21 @@ header {
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   color: white;
   padding-bottom: 130px;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+
+.title-one, .title-two, .title-three, .title-four {
+  opacity: 0; }
 
 header h1 {
   font-size: 80px;
   line-height: 1.5;
   margin: 0;
-  padding-top: 160px;
+  padding-top: 50px;
   padding-bottom: 60px;
   text-align: center; }
 
-header span {
+.title-two {
   font-size: 60px;
   vertical-align: text-top; }
 
@@ -121,12 +125,16 @@ a {
 
 .profile .feature-image > img {
   height: 500px;
-  object-fit: cover;
-  object-position: cover;
   width: 300px; }
 
 .profile .feature-image > img:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all .4s ease-in-out; }
 
 .profile h4 {
   padding: 20px 10px 5px 10px; }
@@ -143,7 +151,7 @@ a {
 
 .neighbourhoods h1 {
   font-size: 80px;
-  letter-spacing: 10px;
+  letter-spacing: 21px;
   margin: 0;
   padding-top: 210px;
   padding-bottom: 40px;
@@ -225,7 +233,7 @@ a {
     font-size: 70px;
     letter-spacing: 10px; }
 
-  header span {
+  header .title-two {
     font-size: 50px; } }
 @media (max-width: 850px) {
   .network {
@@ -242,7 +250,7 @@ a {
   .network h1, .neighbourhoods h1, .collaborate h1 {
     padding-top: 80px; }
 
-  header span {
+  header .title-two {
     font-size: 35px; }
 
   header p, .network p, .neighbourhoods p {
@@ -271,7 +279,7 @@ a {
     font-weight: 600;
     letter-spacing: 1px; }
 
-  header span {
+  header .title-two {
     font-size: 25px; } }
 .top {
   height: 10vh; }
@@ -379,7 +387,7 @@ nav .menu {
     left: 15%;
     letter-spacing: 2px; } }
 @media (max-width: 850px) {
-  .menu {
+  .hamburger {
     display: none; } }
 
 /*# sourceMappingURL=main.css.map */

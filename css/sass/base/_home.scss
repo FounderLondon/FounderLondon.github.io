@@ -11,16 +11,20 @@ header {
   width: 100%;
 }
 
+  .title-one, .title-two, .title-three, .title-four {
+      opacity: 0;
+  }
+
   header h1 {
     font-size: 80px;
     line-height: 1.5;
     margin: 0;
-    padding-top: 160px;
+    padding-top: 50px;
     padding-bottom: 60px;
     text-align: center;
   }
 
-  header span {
+  .title-two {
     font-size: 60px;
     vertical-align: text-top;
   }
@@ -112,14 +116,16 @@ header {
 
   .profile .feature-image > img {
     height: 500px;
-    object-fit: cover;
-    object-position: cover;
+    // object-fit: cover;
+    // object-position: cover;
     // transition: all .4s ease-in-out;
     width: 300px;
   }
 
   .profile .feature-image > img:hover {
     cursor: pointer;
+    @include transform(scale(1.05));
+    transition: all .4s ease-in-out;
   }
 
   .profile h4 {
@@ -136,7 +142,7 @@ header {
 
   .neighbourhoods h1 {
     font-size: 80px;
-    letter-spacing: 10px;
+    letter-spacing: 21px;
     margin: 0;
     padding-top: 210px;
     padding-bottom: 40px;
@@ -241,7 +247,7 @@ header {
         letter-spacing: 10px;
     }
 
-    header span {
+    header .title-two {
         font-size: 50px;
     }
 
@@ -267,7 +273,7 @@ header {
         padding-top: 80px;
     }
 
-    header span {
+    header .title-two {
         font-size: 35px;
     }
 
@@ -311,7 +317,7 @@ header {
         letter-spacing: 1px;
     }
 
-    header span {
+    header .title-two {
         font-size: 25px;
     }
 

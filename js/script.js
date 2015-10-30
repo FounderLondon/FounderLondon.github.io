@@ -1,4 +1,21 @@
-console.log("yo")
+$(document).ready(function() {
+    $(".title-one").animate({opacity:1}, 500, function() {
+        $(".title-two").animate({opacity:1}, 500, function() {
+            $(".title-three").animate({opacity:1}, 500, function() {
+                $(".title-four").animate({opacity:1}, 500);
+            });
+        });
+    });
+    // $(".title-one").fadeIn(500, function() {
+    //     $(".title-two").fadeIn(500, function() {
+    //         $(".title-three").fadeIn(500, function() {
+    //             $(".title-four").fadeIn(500);
+    //         });
+    //     });
+    // });
+
+
+});
 
 $(".hamburger").click(function() {
     $(".hamburger").css("display", "none");
