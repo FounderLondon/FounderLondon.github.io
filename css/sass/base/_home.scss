@@ -1,3 +1,7 @@
+.title-neighbourhoods {
+    visibility: hidden;
+}
+
 header {
   background-color: rgba(0, 0, 0, 0.2);
   background-attachment: fixed;
@@ -262,8 +266,8 @@ header {
 
 .instagram img {
     display: inline-block;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     padding: 30px;
 }
 
@@ -330,7 +334,7 @@ header {
     .network h3 {
         padding: 20px;
     }
-    // 
+    //
     // .network a, .neighbourhoods a {
     //     text-decoration: underline !important;
     // }

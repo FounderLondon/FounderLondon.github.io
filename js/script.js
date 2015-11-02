@@ -6,14 +6,13 @@ $(document).ready(function() {
             });
         });
     });
-    // $(".title-one").fadeIn(500, function() {
-    //     $(".title-two").fadeIn(500, function() {
-    //         $(".title-three").fadeIn(500, function() {
-    //             $(".title-four").fadeIn(500);
-    //         });
-    //     });
-    // });
 
+    $(window).scroll(function() {
+        console.log($(".neighbourhoods").scrollTop());
+        if ($(".neighbourhoods").scrollTop() === 0) {
+            $(".title-neighbourhoods").animate({opacity:1}, 500);
+        }
+    });
 
 });
 

@@ -19,6 +19,9 @@ p {
   font-size: 30px;
   font-weight: lighter; }
 
+.title-neighbourhoods {
+  visibility: hidden; }
+
 header {
   background-color: rgba(0, 0, 0, 0.2);
   background-attachment: fixed;
@@ -245,8 +248,8 @@ a:hover {
 
 .instagram img {
   display: inline-block;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   padding: 30px; }
 
 @media (max-width: 1200px) {
