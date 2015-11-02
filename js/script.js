@@ -15,18 +15,16 @@ $(document).ready(function() {
     $(".hamburger").click(function() {
         $(".hamburger").css("display", "none");
         $(".close").css("display", "block");
-        if ($(window).width() > 950) {
+        if ($(window).width() > 650) {
             $(".menu").animate({
                 top: "0px"
             }, 200);
         }
-        if ($(window).width() < 950) {
-            $(".menu").css({
-                left: "10%"
-            });
+        if ($(window).width() < 650) {
             $(".menu").animate({
-                top: "70px"
+                top: "80px"
             }, 200);
+            $("#header-title").css("visibility", "hidden");
         }
 
     });
@@ -36,7 +34,9 @@ $(document).ready(function() {
         $(".hamburger").css("display", "block");
         $(".menu").animate({
             top: "-200px"
-        }, 600);
+        }, 600, function() {
+            $("#header-title").css("visibility", "visible");
+        });
     });
 
     // Title (h1) animations
@@ -63,22 +63,6 @@ $(document).ready(function() {
             $(".title-collaborate").animate({opacity:1}, 500);
         },
         offset: 400
-    });
-
-    // Profile hover animations
-
-    $(".profile").mouseover(function() {
-        $($(this).children()[0]).fadeIn("normal");
-        $($(this).children()[1]).css({
-            opacity: "0.5"
-        });
-    });
-
-    $(".profile").mouseleave(function() {
-        $($(this).children()[0]).hide();
-        $($(this).children()[1]).css({
-            opacity: "1.0"
-        });
     });
 
 });
