@@ -19,8 +19,8 @@ p {
   font-size: 30px;
   font-weight: lighter; }
 
-.title-neighbourhoods {
-  visibility: hidden; }
+.network, .neighbourhoods, .collaborate {
+  text-align: center; }
 
 header {
   background-color: rgba(0, 0, 0, 0.2);
@@ -36,120 +36,104 @@ header {
   padding-bottom: 130px;
   text-align: center;
   width: 100%; }
-
-.title-one, .title-two, .title-three, .title-four {
-  opacity: 0; }
-
-header h1 {
-  font-size: 80px;
-  line-height: 1.5;
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 60px;
-  text-align: center; }
-
-.title-two {
-  font-size: 60px;
-  vertical-align: text-top; }
-
-header p {
-  font-weight: 300;
-  font-size: 35px;
-  letter-spacing: 4px;
-  line-height: 1.25;
-  padding: 0px 100px 35px 100px;
-  text-transform: uppercase; }
-
-header h3 {
-  color: white;
-  font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 18px;
-  margin: 0;
-  padding-top: 50px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-header h3:hover {
-  color: #222222;
-  cursor: pointer; }
-
-header a {
-  text-decoration: none !important; }
+  header h1 {
+    font-size: 80px;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 130px;
+    padding-bottom: 60px;
+    text-align: center; }
+  header .title-one, header .title-two, header .title-three, header .title-four {
+    opacity: 0; }
+  header .title-two {
+    font-size: 60px;
+    vertical-align: text-top; }
+  header p {
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 4px;
+    line-height: 1.25;
+    padding: 0px 100px 35px 100px;
+    text-transform: uppercase; }
+  header h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 18px;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
+  header h3:hover {
+    color: #222222;
+    cursor: pointer; }
+  header a {
+    text-decoration: none !important; }
 
 .network {
   background-attachment: fixed;
   background-repeat: repeat;
   color: #222222;
-  text-align: center; }
-  .network h1 {
-    padding-bottom: 60px; }
-  .network p {
-    font-weight: 300;
-    padding: 0px 100px 35px 100px; }
-
-.network, .neighbourhoods, .collaborate {
-  text-align: center; }
-
-.network {
+  text-align: center;
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   padding: 80px 40px; }
-
-.network h3 {
-  font-size: 35px;
-  letter-spacing: 5px;
-  line-height: 1.25;
-  padding: 20px 50px; }
-
-a {
-  color: #222222;
-  text-decoration: none; }
-
-a:hover {
-  color: lightgrey; }
+  .network .title-network {
+    opacity: 0; }
+  .network h1 {
+    padding-bottom: 60px; }
+  .network h3 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    line-height: 1.25;
+    padding: 20px 50px; }
+  .network p {
+    font-weight: 300;
+    padding: 0px 100px 35px 100px; }
+  .network a {
+    color: #222222;
+    text-decoration: none; }
+  .network h3 > a:hover {
+    color: lightgrey; }
 
 .profile {
   display: inline-block;
   margin: 40px;
   text-align: center; }
-
-.profile-text {
-  display: none;
-  font-size: 30px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  line-height: 1.5;
-  padding: 100px 10px 0 10px;
-  position: absolute;
-  text-align: center;
-  width: 280px;
-  z-index: 1000; }
-
-.profile .feature-image {
-  padding: 0;
-  height: 400px;
-  overflow: hidden;
-  width: 300px; }
-
-.profile .feature-image > img {
-  height: 500px;
-  width: 300px; }
-
-.profile .feature-image > img:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
-  transition: all .4s ease-in-out; }
-
-.profile h4 {
-  padding: 20px 10px 5px 10px; }
+  .profile:hover {
+    cursor: pointer; }
+  .profile:hover .profile-text {
+    opacity: 1;
+    transition: .4s; }
+  .profile:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    opacity: 0.5;
+    transition: all .4s ease-in-out; }
+  .profile h4 {
+    padding: 20px 10px 5px 10px; }
+  .profile .profile-text {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    opacity: 0;
+    padding: 100px 10px 0 10px;
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    z-index: 1000; }
+  .profile .feature-image {
+    padding: 0;
+    height: 400px;
+    overflow: hidden;
+    width: 300px; }
 
 .neighbourhoods {
   box-sizing: border-box;
@@ -160,61 +144,71 @@ a:hover {
   color: white;
   padding-bottom: 50px;
   text-align: center; }
+  .neighbourhoods .title-neighbourhoods {
+    opacity: 0; }
+  .neighbourhoods h1 {
+    font-size: 80px;
+    letter-spacing: 18px;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center; }
+  .neighbourhoods h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 50px 100px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .neighbourhoods h3:hover {
+    color: #222222;
+    cursor: pointer; }
+  .neighbourhoods p {
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 4px;
+    line-height: 1.25;
+    padding: 20px 100px;
+    text-transform: uppercase; }
+  .neighbourhoods a {
+    text-decoration: none !important; }
 
-.neighbourhoods h1 {
-  font-size: 80px;
-  letter-spacing: 18px;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 40px;
+.instagram {
+  padding-top: 50px;
   text-align: center; }
-
-.neighbourhoods p {
-  font-weight: 300;
-  font-size: 35px;
-  letter-spacing: 4px;
-  line-height: 1.25;
-  padding: 20px 100px;
-  text-transform: uppercase; }
-
-.neighbourhoods h3 {
-  color: white;
-  font-weight: 400;
-  font-size: 60px;
-  letter-spacing: 10px;
-  margin: 0;
-  padding: 50px 100px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase; }
-
-.neighbourhoods h3:hover {
-  color: #222222;
-  cursor: pointer; }
-
-.neighbourhoods a {
-  text-decoration: none !important; }
+  .instagram img {
+    cursor: pointer;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    padding: 20px; }
 
 .collaborate {
   color: #222222;
-  height: 80vh;
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05); }
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
+  padding-bottom: 100px; }
+  .collaborate .title-collaborate {
+    opacity: 0; }
   .collaborate h1 {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     padding-top: 50px; }
   .collaborate p {
     font-size: 24px;
-    font-weight: 500; }
+    font-weight: 500;
+    padding-bottom: 40px; }
   .collaborate input {
-    margin-top: 30px; }
+    margin-top: 10px;
+    margin-bottom: 5px; }
   .collaborate input[type="email"] {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     letter-spacing: 2px;
-    margin-top: 20px;
     padding: 8px;
     width: 280px; }
   .collaborate input[type="submit"] {
@@ -243,15 +237,6 @@ a:hover {
   .collaborate .legal-info {
     font-size: 10px; }
 
-.instagram {
-  text-align: center; }
-
-.instagram img {
-  display: inline-block;
-  height: 300px;
-  width: 300px;
-  padding: 30px; }
-
 @media (max-width: 1200px) {
   header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
     font-size: 70px;
@@ -259,6 +244,12 @@ a:hover {
 
   header .title-two {
     font-size: 50px; } }
+@media (max-width: 920px) {
+  .feature-image img {
+    opacity: 0.5; }
+
+  .profile .profile-text {
+    opacity: 1; } }
 @media (max-width: 850px) {
   .network {
     padding: 0; }
@@ -284,16 +275,16 @@ a:hover {
   .collaborate p {
     font-size: 20px; }
 
-  header h3 {
-    letter-spacing: 1px;
+  header h3, .network a, .neighbourhoods h3 {
+    letter-spacing: 2px;
     text-decoration: underline; }
 
   header h3, .network h3, .neighbourhoods h3, .collaborate h3 {
     font-size: 26px;
     line-height: 1.5; }
 
-  .neighbourhoods h3, .collaborate h3 {
-    padding: 0px 20px 20px 20px; }
+  header h3, .neighbourhoods h3, .collaborate h3 {
+    padding: 40px 20px 20px 20px; }
 
   .network h3 {
     padding: 20px; } }
@@ -394,8 +385,10 @@ nav .black {
 nav .white {
   color: white; }
 nav .menu {
-  left: 25%;
+  left: 210px;
+  margin: 0 auto;
   position: absolute;
+  right: 100px;
   top: -200px; }
   nav .menu ul {
     margin: 0; }
@@ -414,13 +407,18 @@ nav .menu {
 @media (max-width: 1150px) {
   nav .menu {
     font-size: 16px;
-    left: 15%;
     letter-spacing: 2px; } }
 @media (max-width: 850px) {
   nav .logo {
     width: 120px; }
 
-  .menu {
-    position: relative; } }
+  nav .menu {
+    left: 180px; }
+    nav .menu li {
+      padding: 15px 10px 0 10px; } }
+@media (max-width: 650px) {
+  nav .menu {
+    left: 0;
+    right: 0; } }
 
 /*# sourceMappingURL=main.css.map */

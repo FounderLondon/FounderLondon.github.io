@@ -29,8 +29,10 @@ nav {
     }
 
     .menu {
-        left: 25%;
+        left: 210px;
+        margin: 0 auto;
         position: absolute;
+        right: 100px;
         top: -200px;
 
         ul {
@@ -61,7 +63,6 @@ nav {
 
     nav .menu {
         font-size: 16px;
-        left: 15%;
         letter-spacing: 2px;
     }
 
@@ -73,7 +74,21 @@ nav {
         width: 120px;
     }
 
-    .menu {
-        position: relative;
+    nav .menu {
+        left: 180px;
+
+        li {
+            padding: 15px 10px 0 10px;
+        }
     }
+
+}
+
+@media (max-width: 650px) {
+
+    nav .menu {
+        left: 0;
+        right: 0;
+    }
+
 }
