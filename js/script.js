@@ -7,13 +7,6 @@ $(document).ready(function() {
         });
     });
 
-    $(window).scroll(function() {
-        console.log($(".neighbourhoods").scrollTop());
-        if ($(".neighbourhoods").scrollTop() === 0) {
-            $(".title-neighbourhoods").animate({opacity:1}, 500);
-        }
-    });
-
 });
 
 $(".hamburger").click(function() {
@@ -43,12 +36,36 @@ $(".close").click(function() {
     }, 600);
 });
 
+var waypoint = new Waypoint({
+    element: document.getElementById('network'),
+    handler: function() {
+        $(".title-network").animate({opacity:1}, 500);
+    },
+    offset: 400
+});
+
+var waypoint = new Waypoint({
+    element: document.getElementById('neighbourhoods'),
+    handler: function() {
+        $(".title-neighbourhoods").animate({opacity:1}, 500);
+    },
+    offset: 400
+});
+
+var waypoint = new Waypoint({
+    element: document.getElementById('collaborate'),
+    handler: function() {
+        $(".title-collaborate").animate({opacity:1}, 500);
+    },
+    offset: 400
+});
+
 $(".profile").mouseover(function() {
     $($(this).children()[0]).fadeIn("normal");
     $($(this).children()[1]).css({
         opacity: "0.2"
     });
-})
+});
 
 $(".profile").mouseleave(function() {
     console.log("jello")
@@ -56,18 +73,4 @@ $(".profile").mouseleave(function() {
     $($(this).children()[1]).css({
         opacity: "1.0"
     });
-})
-
-// $(window).scroll(function() {
-//     if ($(window).scrollTop() >= (85)) {
-//         $("nav").css({
-//             background-color: "white"
-//         });
-//         $(".hamburger").css({
-//             position: "fixed"
-//         });
-//         $(".logo").css({
-//             position: "fixed"
-//         });
-//     }
-// })
+});
