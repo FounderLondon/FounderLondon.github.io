@@ -316,6 +316,7 @@ header {
   padding: 40px 100px 30px 100px; }
   .full-profile h1 {
     font-size: 60px;
+    opacity: 0;
     padding-bottom: 40px; }
   .full-profile img {
     -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
