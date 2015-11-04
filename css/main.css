@@ -191,15 +191,14 @@ header {
   -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
   -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  padding-bottom: 100px; }
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05); }
   .collaborate .title-collaborate {
     opacity: 0; }
   .collaborate h1 {
-    padding-bottom: 60px;
-    padding-top: 50px; }
+    padding-bottom: 40px;
+    padding-top: 40px; }
   .collaborate p {
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 500;
     padding-bottom: 40px; }
   .collaborate a {
