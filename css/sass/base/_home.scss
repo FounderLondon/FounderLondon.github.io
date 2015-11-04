@@ -1,3 +1,7 @@
+body {
+    // background: red;
+}
+
 // General styles
 
 .network, .neighbourhoods, .collaborate {
@@ -392,6 +396,10 @@ header {
     header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
         font-size: 45px;
         letter-spacing: 3px;
+    }
+
+    .profile {
+        margin: 20px 0;
     }
 }
 

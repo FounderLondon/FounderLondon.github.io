@@ -298,7 +298,10 @@ header {
 
   header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
     font-size: 45px;
-    letter-spacing: 3px; } }
+    letter-spacing: 3px; }
+
+  .profile {
+    margin: 20px 0; } }
 @media (max-width: 525px) {
   header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
     font-size: 35px;
