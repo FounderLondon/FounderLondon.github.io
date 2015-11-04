@@ -388,6 +388,10 @@ header {
 
 @media (max-width: 650px) {
 
+    header {
+        padding-bottom: 40px;
+    }
+
     header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
         font-size: 45px;
         letter-spacing: 3px;
