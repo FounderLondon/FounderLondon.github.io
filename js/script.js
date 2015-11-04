@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // Replaces background for mobile
     if ($(window).width() < 550) {
-        $("header").attr("data-image-src", "dancing-mobile.jpg");
+        $("header").attr("data-image-src", "images/dancing-mobile.jpg");
     }
 
     // Header title animation
