@@ -1,446 +1,85 @@
-html, body, h1, h2, h3, h4, h5, h6, p, ul, li {
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
+/*
+Error: Invalid CSS after "        color": expected ";", was ": white;"
+        on line 53 of css/sass/base/_home.scss
+        from line 4 of css/sass/main.scss
 
-h1 {
-  font-weight: 500;
-  font-size: 80px;
-  letter-spacing: 18px;
-  margin: 0;
-  text-align: center; }
+48:         text-transform: uppercase;
+49:     }
+50: 
+51:     h3 {
+52:         border: 0
+53:         color: white;
+54:         font-weight: 400;
+55:         font-size: 60px;
+56:         letter-spacing: 18px;
+57:         margin: 0;
+58:         padding-top: 50px;
 
-h2 {
-  font-size: 40px;
-  letter-spacing: 4px; }
-
-p {
-  font-size: 30px;
-  font-weight: lighter; }
-
-.network, .neighbourhoods, .collaborate {
-  text-align: center; }
-
-header {
-  background-color: rgba(0, 0, 0, 0.2);
-  background-repeat: repeat;
-  background-size: cover;
-  box-sizing: border-box;
-  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  color: white;
-  padding-bottom: 130px;
-  text-align: center;
-  width: 100%; }
-  header h1 {
-    font-size: 80px;
-    line-height: 1.5;
-    margin: 0;
-    padding-top: 130px;
-    padding-bottom: 60px;
-    text-align: center; }
-  header .title-one, header .title-two, header .title-three, header .title-four {
-    opacity: 0; }
-  header .title-two {
-    font-size: 60px;
-    vertical-align: text-top; }
-  header p {
-    font-weight: 300;
-    font-size: 35px;
-    letter-spacing: 4px;
-    line-height: 1.25;
-    padding: 0px 100px 35px 100px;
-    text-transform: uppercase; }
-  header h3 {
-    color: white;
-    font-weight: 400;
-    font-size: 60px;
-    letter-spacing: 18px;
-    margin: 0;
-    padding-top: 50px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase; }
-  header h3:hover {
-    color: #222222;
-    cursor: pointer; }
-  header a {
-    text-decoration: none !important; }
-
-.network {
-  background-attachment: fixed;
-  background-repeat: repeat;
-  color: #222222;
-  text-align: center;
-  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  padding: 80px 40px; }
-  .network .title-network {
-    opacity: 0; }
-  .network h1 {
-    padding-bottom: 60px; }
-  .network h3 {
-    font-size: 35px;
-    letter-spacing: 5px;
-    line-height: 1.25;
-    padding: 20px 50px; }
-  .network p {
-    font-weight: 300;
-    padding: 0px 100px 35px 100px; }
-  .network a {
-    color: #222222;
-    text-decoration: none; }
-  .network h3 > a:hover {
-    color: lightgrey; }
-
-.profile {
-  display: inline-block;
-  margin: 40px;
-  text-align: center; }
-  .profile:hover {
-    cursor: pointer; }
-  .profile:hover .profile-text {
-    opacity: 1;
-    transition: .4s; }
-  .profile:hover img {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-    opacity: 0.5;
-    transition: all .4s ease-in-out; }
-  .profile h4 {
-    padding: 20px 10px 5px 10px; }
-  .profile .profile-text {
-    font-size: 30px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    opacity: 0;
-    padding: 100px 10px 0 10px;
-    position: absolute;
-    text-align: center;
-    width: 280px;
-    z-index: 1000; }
-  .profile .feature-image {
-    padding: 0;
-    height: 400px;
-    overflow: hidden;
-    width: 300px; }
-
-.neighbourhoods {
-  box-sizing: border-box;
-  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  color: white;
-  padding-bottom: 50px;
-  text-align: center; }
-  .neighbourhoods .title-neighbourhoods {
-    opacity: 0; }
-  .neighbourhoods h1 {
-    font-size: 80px;
-    letter-spacing: 18px;
-    margin: 0;
-    padding-top: 100px;
-    padding-bottom: 60px;
-    text-align: center; }
-  .neighbourhoods h3 {
-    color: white;
-    font-weight: 400;
-    font-size: 60px;
-    letter-spacing: 10px;
-    margin: 0;
-    padding: 50px 100px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase; }
-  .neighbourhoods h3:hover {
-    color: #222222;
-    cursor: pointer; }
-  .neighbourhoods p {
-    font-weight: 300;
-    font-size: 35px;
-    letter-spacing: 4px;
-    line-height: 1.25;
-    padding: 20px 100px;
-    text-transform: uppercase; }
-  .neighbourhoods a {
-    text-decoration: none !important; }
-
-.instagram {
-  padding-top: 50px;
-  text-align: center; }
-  .instagram img {
-    cursor: pointer;
-    display: inline-block;
-    height: 250px;
-    width: 250px;
-    padding: 20px; }
-
-.collaborate {
-  color: #222222;
-  -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05); }
-  .collaborate .title-collaborate {
-    opacity: 0; }
-  .collaborate h1 {
-    padding-bottom: 40px;
-    padding-top: 40px; }
-  .collaborate p {
-    font-size: 17px;
-    font-weight: 500;
-    padding-bottom: 40px; }
-  .collaborate a {
-    color: black;
-    text-decoration: none; }
-  .collaborate a:hover {
-    color: lightgrey; }
-  .collaborate input {
-    margin-top: 10px;
-    margin-bottom: 5px; }
-  .collaborate input[type="email"] {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    letter-spacing: 2px;
-    padding: 8px;
-    width: 280px; }
-  .collaborate input[type="submit"] {
-    background-color: #222222;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    height: 40px;
-    letter-spacing: 3px;
-    padding: 10px;
-    text-transform: uppercase;
-    width: 170px; }
-  .collaborate input[type="submit"]:hover {
-    background-color: white;
-    border: 1px solid #222222;
-    color: #222222; }
-  .collaborate .social-icons {
-    padding: 30px 0; }
-  .collaborate .social-icon {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 3px;
-    width: 30px; }
-  .collaborate .legal-info {
-    font-size: 10px; }
-
-@media (max-width: 1200px) {
-  header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
-    font-size: 70px;
-    letter-spacing: 10px; }
-
-  header .title-two {
-    font-size: 50px; } }
-@media (max-width: 920px) {
-  .feature-image img {
-    opacity: 0.5; }
-
-  .profile .profile-text {
-    opacity: 1; } }
-@media (max-width: 850px) {
-  .network {
-    padding: 0; }
-
-  header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
-    font-size: 50px;
-    letter-spacing: 10px;
-    padding-top: 50px; }
-
-  header h1 {
-    padding-top: 50px; }
-
-  .network h1, .neighbourhoods h1, .collaborate h1 {
-    padding-top: 80px; }
-
-  header .title-two {
-    font-size: 35px; }
-
-  header p, .network p, .neighbourhoods p {
-    font-size: 24px;
-    padding: 0px 20px 20px 20px; }
-
-  .collaborate p {
-    font-size: 16px; }
-
-  header h3, .network a, .neighbourhoods h3 {
-    letter-spacing: 2px;
-    text-decoration: underline; }
-
-  header h3, .network h3, .neighbourhoods h3, .collaborate h3 {
-    font-size: 26px;
-    line-height: 1.5; }
-
-  header h3, .neighbourhoods h3, .collaborate h3 {
-    padding: 40px 20px 20px 20px; }
-
-  .network h3 {
-    padding: 20px; } }
-@media (max-width: 650px) {
-  header {
-    padding-bottom: 40px; }
-
-  header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
-    font-size: 45px;
-    letter-spacing: 3px; }
-
-  .profile {
-    margin: 20px 0; } }
-@media (max-width: 525px) {
-  header h1, .network h1, .neighbourhoods h1, .collaborate h1 {
-    font-size: 35px;
-    letter-spacing: 1px; }
-
-  header .title-two {
-    font-size: 25px; } }
-.top {
-  height: 10vh; }
-
-.full-profile {
-  text-align: center;
-  padding: 40px 100px 30px 100px; }
-  .full-profile h1 {
-    font-size: 60px;
-    opacity: 0;
-    padding-bottom: 40px; }
-  .full-profile img {
-    -webkit-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-    -ms-box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.05);
-    height: 445px;
-    margin-bottom: 20px;
-    object-fit: cover;
-    width: 670px; }
-  .full-profile p {
-    letter-spacing: 2px;
-    padding-top: 30px;
-    text-transform: uppercase; }
-  .full-profile a {
-    color: black;
-    text-decoration: none; }
-  .full-profile a:hover {
-    color: lightgrey; }
-
-.related-profiles {
-  margin-top: 40px;
-  text-align: center; }
-  .related-profiles a {
-    color: black;
-    text-decoration: none; }
-
-hr {
-  margin: 0 auto 50px auto;
-  width: 60%; }
-
-@media (max-width: 1200px) {
-  .full-profile {
-    padding: 0; }
-
-  .full-profile h1 {
-    font-size: 70px;
-    letter-spacing: 10px;
-    padding: 20px; } }
-@media (max-width: 850px) {
-  .full-profile h1 {
-    font-size: 50px;
-    letter-spacing: 10px; }
-
-  .full-profile img {
-    width: 100%; }
-
-  .full-profile p {
-    font-size: 24px;
-    padding: 0px 20px 10px 20px; }
-
-  .related-profiles {
-    margin-top: 30px; }
-
-  hr {
-    margin: 0 auto;
-    width: 70%; } }
-@media (max-width: 650px) {
-  .full-profile h1 {
-    font-size: 45px;
-    letter-spacing: 3px; }
-
-  .full-profile p {
-    font-size: 20px; } }
-@media (max-width: 525px) {
-  .full-profile h1 {
-    font-size: 35px;
-    font-weight: 600;
-    letter-spacing: 1px; }
-
-  .full-profile > a > p {
-    text-decoration: underline;
-    font-size: 18px; } }
-nav .logo {
-  float: left;
-  padding: 22px 30px; }
-nav .close, nav .hamburger {
-  width: 40px;
-  cursor: pointer;
-  float: right;
-  padding: 17px 30px; }
-nav .close {
-  display: none; }
-nav .menu-wrapper {
-  height: 80px; }
-nav .black {
-  color: #222222; }
-nav .white {
-  color: white; }
-nav .menu {
-  left: 210px;
-  margin: 0 auto;
-  position: absolute;
-  right: 100px;
-  top: -200px; }
-  nav .menu ul {
-    margin: 0; }
-  nav .menu li {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 18px;
-    letter-spacing: 3px;
-    padding: 25px 20px 0 20px;
-    text-transform: uppercase; }
-  nav .menu a {
-    text-decoration: none; }
-  nav .menu a:hover {
-    color: #222222; }
-
-@media (max-width: 1150px) {
-  nav .menu {
-    font-size: 16px;
-    letter-spacing: 2px; } }
-@media (max-width: 850px) {
-  nav .logo {
-    width: 120px; }
-
-  nav .menu {
-    left: 180px; }
-    nav .menu li {
-      padding: 15px 10px 0 10px; } }
-@media (max-width: 650px) {
-  nav .menu {
-    left: 0;
-    right: 0; } }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+css/sass/base/_home.scss:53
+css/sass/main.scss:4
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1162:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1098:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1093:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:758:in `block in try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1138:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1138:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:763:in `try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:658:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:647:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:639:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:708:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:658:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:650:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:639:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:632:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:657:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:650:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/engine.rb:393:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/engine.rb:299:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.14/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"        color\": expected \";\", was \": white;\"\A         on line 53 of css/sass/base/_home.scss\A         from line 4 of css/sass/main.scss\A \A 48:         text-transform: uppercase;\A 49:     }\A 50: \A 51:     h3 {\A 52:         border: 0\A 53:         color: white;\A 54:         font-weight: 400;\A 55:         font-size: 60px;\A 56:         letter-spacing: 18px;\A 57:         margin: 0;\A 58:         padding-top: 50px;"; }
