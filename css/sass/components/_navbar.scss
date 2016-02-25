@@ -1,3 +1,94 @@
 nav {
-    display: none;
+
+    .logo {
+      float: left;
+      padding: 22px 30px;
+    }
+
+    .close, .hamburger {
+        width: 40px;
+        cursor: pointer;
+        float: right;
+        padding: 17px 30px;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .menu-wrapper {
+        height: 80px;
+    }
+
+    .black {
+        color: #222222;
+    }
+
+    .white {
+        color: white;
+    }
+
+    .menu {
+        left: 210px;
+        margin: 0 auto;
+        position: absolute;
+        right: 100px;
+        top: -200px;
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 18px;
+            letter-spacing: 3px;
+            padding: 25px 20px 0 20px;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #222222;
+        }
+    }
+
+}
+
+@media (max-width: 1150px) {
+
+    nav .menu {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    nav .logo {
+        width: 120px;
+    }
+
+    nav .menu {
+        left: 180px;
+
+        li {
+            padding: 15px 10px 0 10px;
+        }
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    nav .menu {
+        left: 0;
+        right: 0;
+    }
+
 }

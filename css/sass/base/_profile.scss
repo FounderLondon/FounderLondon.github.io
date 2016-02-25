@@ -1,0 +1,122 @@
+.top {
+  height: 10vh;
+}
+
+.full-profile {
+  text-align: center;
+  padding: 40px 100px 30px 100px;
+
+    h1 {
+        font-size: 60px;
+        opacity: 0;
+        padding-bottom: 40px;
+    }
+
+    img {
+        @include box-shadow(0 4px 0 rgba(0,0,0,.05));
+        height: 445px;
+        margin-bottom: 20px;
+        object-fit: cover;
+        width: 670px;
+    }
+
+  p {
+    letter-spacing: 2px;
+    padding-top: 30px;
+    text-transform: uppercase;
+  }
+
+  a {
+      color: black;
+      text-decoration: none;
+  }
+
+  a:hover {
+      color: lightgrey;
+  }
+
+}
+
+.related-profiles {
+    margin-top: 40px;
+    text-align: center;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+hr {
+    margin: 0 auto 50px auto;
+    width: 60%;
+}
+
+@media (max-width: 1200px) {
+
+    .full-profile {
+        padding: 0;
+    }
+
+    .full-profile h1 {
+        font-size: 70px;
+        letter-spacing: 10px;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .full-profile h1 {
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+
+    .full-profile img {
+        width: 100%;
+    }
+
+    .full-profile p {
+        font-size: 24px;
+        padding: 0px 20px 10px 20px;
+    }
+
+    .related-profiles {
+        margin-top: 30px;
+    }
+
+    hr {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .full-profile h1 {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+
+    .full-profile p {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 525px) {
+
+    .full-profile h1 {
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .full-profile > a > p {
+        text-decoration: underline;
+        font-size: 18px;
+    }
+
+}
